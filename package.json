@@ -1,0 +1,22 @@
+{
+  "name": "ae-lib",
+  "version": "0.0.1",
+  "description": "Helper functions for After Effects",
+  "types": "index.d.ts",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc && browserify index.js > bundle.js && mv bundle.js index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Koen Schmeets",
+  "license": "MIT",
+  "dependencies": {
+    "types-for-adobe": "github:pravdomil/types-for-adobe"
+  },
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "typescript": "^2.6.2"
+  }
+}

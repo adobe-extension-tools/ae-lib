@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "outDir": ".",
+    "allowJs": true,
+    "target": "es3",
+    "strict": true,
+    "noLib": true,
+    "types": [
+      "types-for-adobe/AfterEffects/2018",
+      "extendscript-es5-shim-ts"
+    ],
+    "typeRoots": [
+      "./node_modules"
+    ]
+  },
+  "include": [
+    "./**/*"
+  ],
+  "exclude": []
+}
