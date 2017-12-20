@@ -16,6 +16,12 @@ interface Utils {
   serializeSelection(): string[]
   restoreSelection(serializedSelection: string[]): void
   restoreSelectionAfter(cb: () => void): void
+  tag(layer: Layer, tag: number, value: string): void
+  getTag(layer: Layer, tag: number): string
+  hasTag(layer: Layer, tag: number): boolean
+  toPropertyPath(property: PropertyBase, pretty?: boolean): string[]
+  getPropertyAtPath(layer: Layer, propertyPath: string[]): PropertyBase | null
+  getUniqueName(collection: any, prefix: string): string
 }
 
 interface Global {
